@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document'
-import { OG_IMAGE, OG_IMAGE_ALT, META_DESCRIPTION } from '../constant'
+import { OG_IMAGE, OG_IMAGE_ALT, META_DESCRIPTION } from 'constant'
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
