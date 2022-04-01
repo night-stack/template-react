@@ -1,0 +1,40 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    // [
+    //   "babel-plugin-styled-components",
+    //   {
+    //     "ssr": true,
+    //     "minify": true,
+    //     "transpileTemplateLiterals": true,
+    //     "pure": true,
+    //     "displayName": true,
+    //     "preprocess": false
+    //   }
+    // ],
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./"
+        ],
+        "alias": {
+          "services": "./services",
+          "constants": "./constants",
+          "components": "./components",
+          "pages": "./pages",
+          "static": ".",
+          "public": "./public",
+          "styles": "./styles"
+        }
+      }
+    ],
+    [
+      "formatjs",
+      {
+        "idInterpolationPattern": "[sha512:contenthash:base64:6]",
+        "ast": true
+      }
+    ]
+  ]
+}

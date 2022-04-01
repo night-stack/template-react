@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext", "ES2017"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "alwaysStrict": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "baseUrl": ".",
+    // "paths": {
+    //   "@/services/*": ["./services"],
+    //   "@/constants/*": ["./constants"],
+    //   "@/components/*": ["./components"],
+    //   "@/pages/*": ["./pages"],
+    //   "@/static/*": ["."],
+    //   "@/public/*": ["./public"],
+    //   "@/styles/*": ["./styles]"]
+    // }
+  },
+  "include": [
+    "next-env.d.ts",
+    "pages/**/*",
+    "**/*.ts",
+    "**/*.tsx",
+    "next-seo.config.js"
+, "components/Pagination/index.js"  ],
+  "exclude": ["node_modules"]
+}
