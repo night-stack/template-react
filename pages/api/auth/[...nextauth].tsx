@@ -15,6 +15,7 @@ const providers = [
     authorize: async (credentials, req) => {
       try {
         console.log('MASUK KE SINI ', credentials)
+        console.log('REQ  ', req)
         const res = await axios.post('https://quacodes.com:3000/auth/login', 
         {
           password: credentials.password,

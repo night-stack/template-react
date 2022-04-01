@@ -1,5 +1,5 @@
-import { NextComponentType, NextPageContext } from "next"
-import { getSession, GetSessionOptions } from "next-auth/client"
+import { NextComponentType } from "next"
+// import { getSession, GetSessionOptions } from "next-auth/client"
 import { Component } from "react"
 
 type LayoutingComponent = NextComponentType & {
